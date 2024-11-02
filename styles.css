@@ -1,0 +1,430 @@
+/* General Body Style */
+body {
+    font-family: 'Roboto', sans-serif; /* Updated font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Navbar Styles */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #1f1f1f; /* Dark background */
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #333, #000); /* Black gradient background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff; /* White color for the logo */
+    font-family: 'Montserrat', sans-serif; /* Modern font for logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 25px; /* Increased spacing between nav items */
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    font-family: 'Roboto', sans-serif; /* Updated font for nav links */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff5722; /* Default underline color */
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Expands underline on hover */
+    background-color: #fff; /* White underline on hover */
+}
+
+nav ul li a.active::after {
+    width: 100%; /* Full underline on active link */
+    background-color: #fff; /* White underline for active state */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@600&display=swap');
+
+
+/* Home Section Styles */
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background-color: #fff; /* White background color */
+    min-height: 100vh;
+}
+
+.home-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-photo {
+    flex: 1;
+    max-width: 400px;
+    margin-right: 2rem;
+    border: 4px solid #000; /* Black border for the photo */
+    overflow: hidden;
+}
+
+.home-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home-content {
+    flex: 2;
+    max-width: 600px;
+}
+
+.home-content h7 {
+    font-size: 3rem;
+    color: #000; /* Black color for the name */
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif; /* Font for the name */
+    text-decoration: none; /* Ensure no underline */
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    color: #333; /* Dark gray text color */
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #000; /* Black button background color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #333; /* Dark gray on hover */
+    transform: translateY(-2px); /* Slightly lift the button */
+}
+
+.btn-download:active {
+    background-color: #111; /* Even darker gray on click */
+}
+
+
+/* Section Styling */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+/* General Heading Styles */
+h1, h2, h3, h4, h5, h6 ,h7{
+    margin-bottom: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: inline-block;
+    cursor: pointer; /* Add pointer to indicate it's interactive */
+    transition: color 0.3s ease;
+}
+
+/* Underline Animation */
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before , h7::before{
+    content: "";
+    position: absolute;
+    width: 0; /* Start with 0 width */
+    height: 4px;
+    background-color: #4caf50; /* Default color */
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+h1:hover::before, h2:hover::before, h3:hover::before, h4:hover::before, h5:hover::before, h6:hover::before ,h7:hover::before{
+    width: 100%; /* Expands underline on hover */
+    background-color: #333; /* Change underline color on hover */
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover , h7:hover{
+    color: #333; /* Change heading color on hover */
+    transition: color 0.3s ease;
+}
+
+/* Active heading styling */
+h1.active::before, h2.active::before, h3.active::before, h4.active::before, h5.active::before, h6.active::before, h7.active::before {
+    width: 100%; /* Full underline on active heading */
+    background-color: #ff5722; /* Change color to orange for active state */
+}
+
+h1.active, h2.active, h3.active, h4.active, h5.active, h6.active , h7.active{
+    color: #ff5722; /* Change heading color for active state */
+}
+
+/* About Me Section */
+#about {
+    background-color: #fff; /* White background for the section */
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #000; /* Black color for heading */
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #333; /* Dark gray text color */
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.about-education, .about-skills {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.about-education h3, .about-skills h3 {
+    font-size: 1.8rem;
+    color: #000; /* Black color for subheadings */
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-education p, .about-skills ul {
+    font-size: 1rem;
+    color: #666; /* Gray color for text */
+}
+
+.about-skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-skills ul li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.about-photo {
+    flex: 1;
+    max-width: 300px;
+    border: 4px solid #000; /* Black border for the photo */
+    overflow: hidden;
+}
+
+.about-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Project and Certification Container */
+.certificate-container, .project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.certificate-item, .project-item {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate-item:hover, .project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Contacts Section */
+#contacts {
+    background-color: #f1f1f1;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#contacts ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+#contacts ul li {
+    margin: 15px 0;
+}
+
+#contacts ul li a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contacts ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #4caf50;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+#back-to-top:hover {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    padding: 1.5rem;
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #home h1 {
+        font-size: 3rem;
+    }
+
+    #home p {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+
+    .certificate-container, .project-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Sticky Navbar */
+nav.sticky {
+    background-color: #111;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Project/Certification Cards */
+.hover-effect {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff9800;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1000;
+}
+
+#back-to-top:hover {
+    background-color: #333;
+}
