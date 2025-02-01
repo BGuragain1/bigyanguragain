@@ -1,127 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bigyan Guragain | Portfolio & Resume</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="logo">AI Enthusiast</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="#home">Bigyan Guragain</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
 
-    <section id="home" class="home-section">
-        <div class="home-container">
-            <div class="home-photo">
-                <img src="bigyan.jpg" alt="Your Photo" style="height: 500px; width: 400px;">
-            </div>
-            <div class="home-content">
-                <h7>Bigyan Guragain</h7>
-                <p>AI/ML/Data Science Enthusiast</p>
-                <br>
-                <a href="Bigyan-Guragain-cv.pdf" class="btn-download" download>Download CV</a>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-container">
+      <h1 class="hero-title">Bigyan Guragain</h1>
+      <p class="hero-subtitle">
+        Aspiring Computer Science Graduate passionate about technology, programming, and data analysis.
+      </p>
+      <a href="#projects" class="btn">See My Work</a>
+    </div>
+  </section>
 
-    <section id="about">
-        <div class="about-container">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>A recent computer science graduate passionate about technology, eager to gain real-world experience.
-                    Ready to contribute to a
-                    creative and dynamic company by leveraging programming, problem-solving, and data analysis skills.
-                    Seeking an opportunity to
-                    grow professionally and make a signi cant impact in the eld of computer science.</p>
-                <div class="about-education">
-                    <h3>Education</h3>
-                    <p><strong>Secondary Education Examination</strong> - Kamal Netra Chunna Muna Secondary School</p>
-                    <p><strong>School Leaving Certificate(+2) </strong> - Golden Gate International College</p>
-                    <p><strong>Undergraduate Degree</strong> - Herald College Kathmandu</p>
-                </div>
-                <div class="about-skills">
-                    <h3>Skills</h3>
-                    <ul>
-                        <li>AI/Machine Learning</li>
-                        <li>Data analysis and Visualization</li>
-                        <li>NumPy, Pandas</li>
-                        <li>Python for Data science</li>
-                        <li>TensorFlow, scikit-learn</li>
-                        <li>MySQL</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="certificate-container">
-            <div class="certificate-item">
-                <h3>Python For Data Science</h3>
-                <p>Learned about python basics and it's different libraries like numpy , pandas , and matplotlib required for data preprocessing and
-                    visualization</p>
-            </div>
-            <div class="certificate-item">
-                <h3>Neural Network and Deep Learning</h3>
-                <p>Learned about deep learning and neural networks and their workings</p>
-            </div>
-            <div class="certificate-item">
-                <h3>Data Science Professional Certificate - IBM</h3>
-                <p>Mastered data science methodology, data visualization, machine learning, and data mining tools like
-                    Pandas, Matplotlib, and Scikit-learn.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-item">
-                <h3>Project 1: Form Scanner System using Handwritten Character Recognition</h3>
-                <p>Utilizing the Machine learning, Deep Learning and CNN , Open CV, computer vision, Django Framework, the project scans the
-                    image of a form and extracts the handwritten characters.</p>
-            </div>
-            <div class="project-item">
-                <h3>Project 2: Vegetable Classi cation and Sentiment Analysis</h3>
-                <p>Utilizes ANN, CNN and transfer learning for vegetable classi cation while RNN, NLP and LSTM for sentiment Analysis</p>
-            </div>
-            <div class="project-item">
-                <h3>Project 3: Car Price Prediction, Ecommerce Data analysis</h3>
-                <p>Data preprocessing, using sickit learn for predictions for predicting car price and done data visualization on ecommerce using
-                    numpy, pandas, and visulaization tools.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacts">
-        <h2>Contacts</h2>
-        <p>Feel free to get in touch:</p>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container about-container">
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          I am an aspiring computer science graduate with a passion for technology. I love applying programming, problem-solving, and data analysis skills to create impactful solutions. Eager to grow professionally and make a meaningful contribution in the field of technology.
+        </p>
+      </div>
+      <div class="about-details">
         <ul>
-            <li>Email: bigyanguragain01@gmail.com</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/bigyan-guragain-2a811a231/">Linkedin Profile</a></li>
-            <li>GitHub: <a href="" target="_blank">github.com/yourusername</a></li>
+          <li><strong>Address:</strong> Kageshori Manohara 08, Kathmandu</li>
+          <li><strong>Phone:</strong> 9840178855</li>
+          <li><strong>Email:</strong> <a href="mailto:bigyanguragain01@gmail.com">bigyanguragain01@gmail.com</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bigyan-guragain-2a811a231/" target="_blank">View Profile</a></li>
         </ul>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 Bigyan Guragain. All Rights Reserved. | AI/Machine Learning Enthusiast</p>
-    </footer>
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Artificial Intelligence Internship</h3>
+        <span class="date">Nov, 2024 - Jan, 2025</span>
+        <p><strong>AMNIL Technologies Pvt. Ltd, Kathmandu</strong></p>
+        <p>
+          Worked on diverse AI projects involving Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Optical Character Recognition (OCR), and machine learning. Focused on model development, optimization, and deployment.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>+2 Science (Biology)</h3>
+        <span class="date">Jul, 2019 - Jul, 2021</span>
+        <p><strong>Golden Gate International College, Kathmandu</strong></p>
+      </div>
+      <div class="education-item">
+        <h3>BSc (Hons) Computer Science</h3>
+        <span class="date">Nov, 2021 - May, 2024</span>
+        <p><strong>Herald College, Kathmandu</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <!-- Project 1 -->
+      <div class="project-item">
+        <h3>Form Scanner System using Handwritten Character Recognition</h3>
+        <p>
+          Developed a system that scans form images and extracts handwritten characters using Machine Learning, Deep Learning (CNN), OpenCV, and the Django framework.
+        </p>
+        <a href="https://github.com/BGuragain1/Handwritten-Digit-Recognition-and-Form-data-extraction.git" class="btn" target="_blank">View on GitHub</a>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-item">
+        <h3>Vegetable Classification and Sentiment Analysis</h3>
+        <p>
+          Utilized ANN, CNN, and transfer learning for vegetable classification, along with RNN, NLP, and LSTM for sentiment analysis.
+        </p>
+        <a href="https://github.com/BGuragain1/Deep-Learning-Projects" class="btn" target="_blank">View on GitHub</a>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-item">
+        <h3>Car Price Prediction & E-commerce Data Analysis</h3>
+        <p>
+          Performed data preprocessing and built prediction models using scikit-learn for car price prediction. Also visualized e-commerce data with NumPy, Pandas, and visualization tools.
+        </p>
+        <a href="https://github.com/BGuragain1/Machine-Learning" class="btn" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="certification-item">
+        <h3>Python For Data Science</h3>
+        <span class="date">2022</span>
+        <p><strong>IBM</strong></p>
+        <p>
+          Gained proficiency in Python basics along with its essential libraries (NumPy, Pandas, Matplotlib) for data preprocessing and visualization.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Communication</li>
+        <li>Python for Data Science</li>
+        <li>AI / Machine Learning</li>
+        <li>Data Analysis & Visualization</li>
+        <li>NumPy, Pandas</li>
+        <li>ML/DL: TensorFlow, scikit-learn</li>
+        <li>MySQL</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you’d like to get in touch or collaborate, feel free to reach out!</p>
+      <form action="https://formspree.io/f/{your_form_id}" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="_replyto" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2025 Bigyan Guragain. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/bigyan-guragain-2a811a231/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
-
 </html>
